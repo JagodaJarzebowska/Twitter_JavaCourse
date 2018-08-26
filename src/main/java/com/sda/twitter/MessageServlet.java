@@ -22,6 +22,12 @@ public class MessageServlet extends HttpServlet {
         Message message = messageCreator.create(req.getParameter("content"),req.getParameter("author"));
         req.setAttribute("message",message);
 
+        if (Autentication.isIsAuthenticated()){
+            req.getRequestDispatcher("showMessage.jsp").forward(req,resp);
+        }else {
+            req.getRequestDispatcher("error.jsp").forward(req,resp);
+        }
+
         // 'łączy strone jsp z naszym requestem' - w duzym uproszczeniu
         req.getRequestDispatcher("showMessage.jsp").forward(req,resp);
     }

@@ -18,7 +18,6 @@ public class MyFilter implements Filter {
             if (currentParam.equals("secret")) {
                String secretParam = servletRequest.getParameter("secret");
                 Autentication.setIsAuthenticated(false);
-                System.out.println(names.nextElement());
                 if (secretParam != null) {
                     if (secretParam.equals("123")) {
                         Autentication.setIsAuthenticated(true);
