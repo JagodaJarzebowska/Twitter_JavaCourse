@@ -1,6 +1,4 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" ecoding="UTF-8" ?>
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
@@ -12,4 +10,13 @@
     <servlet-name>MessageServlet</servlet-name>
     <url-pattern>/message</url-pattern>
   </servlet-mapping>
+
+  <filter>
+    <filter-name>TestFilter</filter-name>
+    <filter-class>com.sda.twitter.TestFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>TestFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
 </web-app>
