@@ -19,8 +19,8 @@ public class MessageServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         MessageCreator messageCreator = new MessageCreator();
-        Message message = messageCreator.create(req.getParameter("content"));
+        Message message = messageCreator.create(req.getParameter("content"),req.getParameter("author"));
         req.setAttribute("message",message);
-        resp.sendRedirect("/showMessage");
+        req.getRequestDispatcher("showMessage.jsp").forward(req,resp);
     }
 }
