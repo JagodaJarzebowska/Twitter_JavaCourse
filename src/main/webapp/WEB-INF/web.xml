@@ -4,4 +4,12 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>MessageServlet</servlet-name>
+    <servlet-class>com.sda.twitter.MessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MessageServlet</servlet-name>
+    <url-pattern>/message</url-pattern>
+  </servlet-mapping>
 </web-app>
