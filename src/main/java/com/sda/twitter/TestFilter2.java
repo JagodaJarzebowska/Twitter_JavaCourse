@@ -1,12 +1,9 @@
 package com.sda.twitter;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
-import java.util.Enumeration;
 
-@WebFilter
-public class TestFilter implements Filter {
+public class TestFilter2 implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -14,10 +11,8 @@ public class TestFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        Enumeration name = servletRequest.getParameterNames();
-        while (name.hasMoreElements())
-            System.out.println(name.nextElement());
-        filterChain.doFilter(servletRequest, servletResponse);
+        System.out.println(2);
+        filterChain.doFilter(servletRequest,servletResponse);
     }
 
     @Override
