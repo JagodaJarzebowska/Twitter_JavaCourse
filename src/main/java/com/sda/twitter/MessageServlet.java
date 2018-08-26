@@ -21,6 +21,8 @@ public class MessageServlet extends HttpServlet {
         MessageCreator messageCreator = new MessageCreator();
         Message message = messageCreator.create(req.getParameter("content"),req.getParameter("author"));
         req.setAttribute("message",message);
+
+        // 'łączy strone jsp z naszym requestem' - w duzym uproszczeniu
         req.getRequestDispatcher("showMessage.jsp").forward(req,resp);
     }
 }
