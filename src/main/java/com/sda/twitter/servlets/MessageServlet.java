@@ -1,8 +1,11 @@
-package com.sda.twitter;
+package com.sda.twitter.servlets;
 
+
+import com.sda.twitter.utils.Autentication;
+import com.sda.twitter.model.Message;
+import com.sda.twitter.utils.MessageCreator;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,5 +1,7 @@
 package com.sda.twitter;
 
+import com.sda.twitter.model.Message;
+import com.sda.twitter.utils.MessageCreator;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,6 @@
-package com.sda.twitter;
+package com.sda.twitter.filters;
+
+import com.sda.twitter.utils.Autentication;
 
 import javax.servlet.*;
 import java.io.IOException;

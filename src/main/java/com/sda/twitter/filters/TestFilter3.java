@@ -1,4 +1,4 @@
-package com.sda.twitter;
+package com.sda.twitter.filters;
 
 import javax.servlet.*;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.sda.twitter;
+package com.sda.twitter.model;
 
 public class Message {
 

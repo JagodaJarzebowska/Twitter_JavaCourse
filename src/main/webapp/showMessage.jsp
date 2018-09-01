@@ -1,4 +1,4 @@
-<%@ page import="com.sda.twitter.Message" %><%--
+<%@ page import="com.sda.twitter.model.Message" %><%--
   Created by IntelliJ IDEA.
   User: jagod
   Date: 26.08.2018

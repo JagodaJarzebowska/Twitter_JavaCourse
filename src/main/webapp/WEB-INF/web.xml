@@ -4,7 +4,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
     <servlet-name>MessageServlet</servlet-name>
-    <servlet-class>com.sda.twitter.MessageServlet</servlet-class>
+    <servlet-class>com.sda.twitter.servlets.MessageServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MessageServlet</servlet-name>
@@ -14,7 +14,7 @@
 
   <filter>
     <filter-name>MyFilter</filter-name>
-    <filter-class>com.sda.twitter.MyFilter</filter-class>
+    <filter-class>com.sda.twitter.filters.MyFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>MyFilter</filter-name>
@@ -24,7 +24,7 @@
 
   <filter>
     <filter-name>TestFilter</filter-name>
-    <filter-class>com.sda.twitter.TestFilter</filter-class>
+    <filter-class>com.sda.twitter.filters.TestFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>TestFilter</filter-name>
@@ -33,7 +33,7 @@
 
   <filter>
     <filter-name>TestFilter2</filter-name>
-    <filter-class>com.sda.twitter.TestFilter2</filter-class>
+    <filter-class>com.sda.twitter.filters.TestFilter2</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>TestFilter2</filter-name>
@@ -42,7 +42,7 @@
 
   <filter>
     <filter-name>TestFilter3</filter-name>
-    <filter-class>com.sda.twitter.TestFilter3</filter-class>
+    <filter-class>com.sda.twitter.filters.TestFilter3</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>TestFilter3</filter-name>
